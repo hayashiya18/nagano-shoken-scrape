@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "nagano-shoken-scrape"
+version = "0.1.0"
+description = "長野証券 e照会 スクレイピング"
+authors = ["hayashiya18 <sei8haya@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.7.1"
+selenium = "*"
+click = "*"
+pytz = "*"
+pandas = "*"
+beautifulsoup4 = "*"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+naganoshoken = "naganoshoken.entrypoint:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
